@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica|Muli:300,400" rel="stylesheet">
+  <!-- <script src="https://d3js.org/d3-queue.v3.min.js"></script> -->
         <script src="https://d3js.org/d3-color.v1.min.js"></script>
         <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
         <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/site.css">
-  <link rel="stylesheet" type="text/css" href="https://static.squarespace.com/universal/fonts/squarespace-font.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica|Muli:300,400" rel="stylesheet"> -->
-  <!-- <link rel="stylesheet" href="../assets/css/site2.css"> -->
+
+
   <link rel="stylesheet" href="../assets/css/style2.css">
 
+    <!-- <script src="http://d3js.org/d3.v5.js" charset="utf-8"></script> -->
 
   <link href="js/style.css" rel="stylesheet">
 
@@ -27,7 +28,7 @@
         <script src="js/mouseEvents.js"></script>
         <script src="js/clickEvents.js"></script>
         <script src="js/shortestPathCalculator.js"></script>
-  <style>
+<style>
             #my-data-v {
                 -webkit-box-sizing: border-box;
                 -moz-box-sizing: border-box;
@@ -188,316 +189,322 @@
                 text-align: center;
                 margin:40px 0 80px 0;
             }
-        </style>
-        <style>
-            #my-data-v2 {
-                background-color: #171A1D;
-                font-family: 'Muli', sans-serif;
-                color: #a8a394;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-            }
+</style>
+<style>
+    #my-data-v2 {
+        background-color: #171A1D;
+        font-family: 'Muli', sans-serif;
+        color: #a8a394;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
 
-            #top-intro {
-                width: 1200px;
-                margin: 0 auto;
-                padding-left: 70px;
-            }
+    #top-intro {
+        width: 1200px;
+        margin: 0 auto;
+        padding-left: 70px;
+    }
 
-            #top-title {
-                font-size: 36px;
-                color: #f6f4ef;
-                font-family: 'IM Fell DW Pica', serif;
-                margin-bottom: -12px;
-                margin-top: 20px;
-                text-align: center;
-                margin:60px 0 60px 0;
-            }
+    #top-title {
+        font-size: 36px;
+        color: #f6f4ef;
+        font-family: 'IM Fell DW Pica', serif;
+        margin-bottom: -12px;
+        margin-top: 20px;
+        text-align: center;
+        margin:60px 0 60px 0;
+    }
 
-            #intro-title {
-                width: 46%;
-                display: inline-block;
-            }
-            #top-subtitle {
-                font-size: 17px;
-                font-weight: 300;
-                margin-top: 11px;
-                line-height: 150%;
-                padding-bottom: 45px;
-            }
+    #intro-title {
+        width: 46%;
+        display: inline-block;
+    }
+    #top-subtitle {
+        font-size: 17px;
+        font-weight: 300;
+        margin-top: 11px;
+        line-height: 150%;
+        padding-bottom: 45px;
+    }
 
-            #legend {
-                z-index: 1000;
-                margin-left: 20px;
-            }
+    #legend {
+        z-index: 1000;
+        margin-left: 20px;
+    }
 
-            #top-shortest-path { 
-                margin-top: 43px;
-            }
-            #top-shortest-path p {
-                font-size: 11px;
-                text-align: justify;
-                line-height: 155%;
-                color: #777777;
-            }
-            #top-shortest-path h3 {
-                font-size: 16px;
-                color: #c9c6c0;
-                font-family: 'IM Fell DW Pica', serif;
-                margin-bottom: -8px;
-            }
+    #top-shortest-path { 
+        margin-top: 43px;
+    }
+    #top-shortest-path p {
+        font-size: 11px;
+        text-align: justify;
+        line-height: 155%;
+        color: #777777;
+    }
+    #top-shortest-path h3 {
+        font-size: 16px;
+        color: #c9c6c0;
+        font-family: 'IM Fell DW Pica', serif;
+        margin-bottom: -8px;
+    }
 
-            #intro-text {
-                width: 45%;
-                display: inline-block;
-                padding-left: 50px;
-                padding-right: 0px;
-                vertical-align: top;
-            }
-            #top-explanation {
-                font-size: 12px;
-                text-align: justify;
-            }
-            #top-explanation p {
-                line-height: 160%;
-            }
+    #intro-text {
+        width: 45%;
+        display: inline-block;
+        padding-left: 50px;
+        padding-right: 0px;
+        vertical-align: top;
+    }
+    #top-explanation {
+        font-size: 12px;
+        text-align: justify;
+    }
+    #top-explanation p {
+        line-height: 160%;
+    }
 
-            #top-chrome-note {
-                font-size: 17px;
-                color: #f6f4ef;
-                text-align: center;
-                margin-top: 20px;
-                font-weight: 300;
-            }
+    #top-chrome-note {
+        font-size: 17px;
+        color: #f6f4ef;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 300;
+    }
 
-            #royal-chart {
-                position: relative;
-                left: 50px;
-                text-align: center;
-                position: relative;
-            }
+    #royal-chart {
+        position: relative;
+        left: 50px;
+        text-align: center;
+        position: relative;
+    }
 
-            #royal-chart canvas {
-                position: absolute;
-                top: 0;
-                pointer-events: none;
-                z-index: -1;
-            }
+    #royal-chart canvas {
+        position: absolute;
+        top: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
 
-            #royal-chart svg {
-                z-index: 2;
-            }
+    #royal-chart svg {
+        z-index: 2;
+    }
 
-            #credit {
-                font-family: 'IM Fell DW Pica', serif;
-                margin-top: 30px;
-                margin-bottom: 30px;
-                font-size: 12px;
-                margin-left: 30px;
-                line-height: 150%;
-            }
+    #credit {
+        font-family: 'IM Fell DW Pica', serif;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        margin-left: 30px;
+        line-height: 150%;
+    }
 
-            a, a:link, a:visited, a:active {
-                color: #ddece9;
-                border-bottom: 1px dotted rgba(231, 228, 202, .5);
-                text-decoration: none;
-            }
+    a, a:link, a:visited, a:active {
+        color: #ddece9;
+        border-bottom: 1px dotted rgba(231, 228, 202, .5);
+        text-decoration: none;
+    }
 
-            /* --- Legend --- */
+    /* --- Legend --- */
 
-            .legend-node-text,
-            .legend-link-text,
-            .legend-color-text,
-            .legend-color-value {
-                font-size: 12px;
-                fill: #c9c6c0;
-                font-family: 'IM Fell DW Pica', serif;
-            }
-            .legend-link-text,
-            .legend-color-text {
-                text-anchor: middle;
-            }
-            .legend-color-value {
-                font-size: 15px;
-            }
+    .legend-node-text,
+    .legend-link-text,
+    .legend-color-text,
+    .legend-color-value {
+        font-size: 12px;
+        fill: #c9c6c0;
+        font-family: 'IM Fell DW Pica', serif;
+    }
+    .legend-link-text,
+    .legend-color-text {
+        text-anchor: middle;
+    }
+    .legend-color-value {
+        font-size: 15px;
+    }
 
-            .legend-color-path {
-                fill: none;
-                stroke-linecap: round;
-            }
-            /* --- Titles --- */
+    .legend-color-path {
+        fill: none;
+        stroke-linecap: round;
+    }
+    /* --- Titles --- */
 
-            .royal-name {
-                text-anchor: middle;
-                font-size: 16px;
-                fill: #c9c6c0;
-                font-family: 'IM Fell DW Pica', serif;
-            }
+    .royal-name {
+        text-anchor: middle;
+        font-size: 16px;
+        fill: #c9c6c0;
+        font-family: 'IM Fell DW Pica', serif;
+    }
 
-            .interesting-royal-name {
-                font-size: 11px;
-                pointer-events: none;
-                font-family: 'IM Fell DW Pica', serif;
-            }
+    .interesting-royal-name {
+        font-size: 11px;
+        pointer-events: none;
+        font-family: 'IM Fell DW Pica', serif;
+    }
 
-            .royal-country {
-                text-anchor: middle;
-                font-size: 11px;
-                fill: #7e7b72;
-            }
+    .royal-country {
+        text-anchor: middle;
+        font-size: 11px;
+        fill: #7e7b72;
+    }
 
-            .birth-year-label {
-                text-anchor: end;
-                font-size: 12px;
-                fill: #7e7b72;
-            }
+    .birth-year-label {
+        text-anchor: end;
+        font-size: 12px;
+        fill: #7e7b72;
+    }
 
-            /* --- Hovering --- */
+    /* --- Hovering --- */
 
-            .hoverRect {
-                fill: none;
-                pointer-events: all;
-            }
+    .hoverRect {
+        fill: none;
+        pointer-events: all;
+    }
 
-            /* --- Tooltip --- */
+    /* --- Tooltip --- */
 
-            .tooltip-wrapper {
-                font-size: 11px;
-                pointer-events: none;
-                text-anchor: middle;
-                text-shadow: 0 1px 4px #101420, 1px 0 4px #101420, -1px 0 4px #101420, 0 -1px 4px #101420
-            }
+    .tooltip-wrapper {
+        font-size: 11px;
+        pointer-events: none;
+        text-anchor: middle;
+        text-shadow: 0 1px 4px #101420, 1px 0 4px #101420, -1px 0 4px #101420, 0 -1px 4px #101420
+    }
 
-            .tooltip-name {
-                font-size: 14px;
-                font-family: 'IM Fell DW Pica', serif;
-                fill: #c9c6c0;
-            }
+    .tooltip-name {
+        font-size: 14px;
+        font-family: 'IM Fell DW Pica', serif;
+        fill: #c9c6c0;
+    }
 
-            .tooltip-title {
-                font-size: 11px;
-                fill: #7e7b72;
-            }
+    .tooltip-title {
+        font-size: 11px;
+        fill: #7e7b72;
+    }
 
-            .tooltip-extra-info {
-                font-size: 11px;
-                fill: #7e7b72;
-            }
+    .tooltip-extra-info {
+        font-size: 11px;
+        fill: #7e7b72;
+    }
 
-            /* --- Axes --- */
+    /* --- Axes --- */
 
-            .axis {
-                font-family: inherit;
-            }
-            .axis line, .axis path {
-                stroke: none;
-            }
-            .axis text {
-                fill: #d2d2d2;
-                font-size: 18px;
-                font-family: 'IM Fell DW Pica', serif;
-            }
+    .axis {
+        font-family: inherit;
+    }
+    .axis line, .axis path {
+        stroke: none;
+    }
+    .axis text {
+        fill: #d2d2d2;
+        font-size: 18px;
+        font-family: 'IM Fell DW Pica', serif;
+    }
 
-            /* --- Network --- */
+    /* --- Network --- */
 
-            .link, .link-path-legend {
-              stroke: #d4d4d4;
-              fill: none;
-              opacity: 0.6;
-              stroke-width: 1.5px;
-              pointer-events: none;
-            }
+    .link, .link-path-legend {
+      stroke: #d4d4d4;
+      fill: none;
+      opacity: 0.6;
+      stroke-width: 1.5px;
+      pointer-events: none;
+    }
 
-            .link-couple {
-                stroke-dasharray: 5,5;
-            }
+    .link-couple {
+        stroke-dasharray: 5,5;
+    }
 
-            .node {
-              opacity: 0.8;
-              pointer-events: none;
-            }
+    .node {
+      opacity: 0.8;
+      pointer-events: none;
+    }
 
-            /* --- Pulsing --- */
+    /* --- Pulsing --- */
 
-            .node-pulse, .node-pulse-legend {
-                fill: none;
-                pointer-events: none;
-            }
+    .node-pulse, .node-pulse-legend {
+        fill: none;
+        pointer-events: none;
+    }
 
-            .pulse {
-            /*  animation: pulse 2s ease infinite;
-              -webkit-animation: pulse 2s ease infinite;
-              animation: pulse pulse 2s ease infinite;
-              -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;*/
-            }
+    .pulse {
+    /*  animation: pulse 2s ease infinite;
+      -webkit-animation: pulse 2s ease infinite;
+      animation: pulse pulse 2s ease infinite;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;*/
+    }
 
-            @keyframes pulse {
-              0% {
-                transform: scale(1);
-                transform-origin: center center;
-                stroke-width: 3px;
-                stroke-opacity: 1;
-              }
-              100% {
-                transform: scale(2.5);
-                transform-origin: center center;
-                stroke-width: 1px;
-                stroke-opacity: 0;
-              }
-            }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        transform-origin: center center;
+        stroke-width: 3px;
+        stroke-opacity: 1;
+      }
+      100% {
+        transform: scale(2.5);
+        transform-origin: center center;
+        stroke-width: 1px;
+        stroke-opacity: 0;
+      }
+    }
 
-            @-webkit-keyframes "pulse" {
-             0% {
-                -webkit-transform: scale(1);
-                transform-origin: center center;
-                stroke-width: 3px;
-                stroke-opacity: 1;
-             }
-             100% {
-                -webkit-transform: scale(2.5);
-                transform-origin: center center;
-                stroke-width: 1px;
-                stroke-opacity: 0.0;
-             }
-            }
+    @-webkit-keyframes "pulse" {
+     0% {
+        -webkit-transform: scale(1);
+        transform-origin: center center;
+        stroke-width: 3px;
+        stroke-opacity: 1;
+     }
+     100% {
+        -webkit-transform: scale(2.5);
+        transform-origin: center center;
+        stroke-width: 1px;
+        stroke-opacity: 0.0;
+     }
+    }
 
-            /* --- Rotating --- */
+    /* --- Rotating --- */
 
-            .node-clicked {
-                stroke: #fff;
-                fill: none;
-                stroke-width: 3px;
-                stroke-linecap: round;
-                stroke-opacity: 0.75;
-                stroke-dasharray: 0,5;
-                pointer-events: none;
+    .node-clicked {
+        stroke: #fff;
+        fill: none;
+        stroke-width: 3px;
+        stroke-linecap: round;
+        stroke-opacity: 0.75;
+        stroke-dasharray: 0,5;
+        pointer-events: none;
 
-                animation-duration: 1s;
-                animation-name: changedash;
-                animation-iteration-count: infinite;
-                animation-direction: normal;
-                animation-timing-function: linear;
-            }
+        animation-duration: 1s;
+        animation-name: changedash;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-timing-function: linear;
+    }
 
 
-            @keyframes changedash {
-                from { stroke-dashoffset: 5px; }
-                to { stroke-dashoffset: 0px; }
-            }
-            .hahaha {
-                z-index: -100;
-            }
-            #imgla {
-                position: absolute;
-                width: 36%;
-                left: -150px;
-                top: -8px;
-            }
-        </style>
+    @keyframes changedash {
+        from { stroke-dashoffset: 5px; }
+        to { stroke-dashoffset: 0px; }
+    }
+    .hahaha {
+        z-index: -100;
+    }
+    #imgla {
+        position: absolute;
+        width: 36%;
+        left: -150px;
+        top: -8px;
+    }
+</style>
 </head>
 <body>
+    <!-- <div class="container-fluid" id="my-data-v2"> -->
+            
+            <!-- <svg id="visualisationC">
+        
+            </svg> -->
+    <!-- </div> -->
 
     <header id="header" class="clear">
 
@@ -544,19 +551,10 @@
                 <div class="page-divider"></div>
             </nav>
         </div>
-
-
     </header>
    
    
-    <!-- <div class="row justify-content-md-center">
-        <div class="image-wrapper col-md-9" >
-            <img src="../assets/img/3-Game-Design-01.png" alt="Responsive image"> 
-            <img src="../assets/img/3-Game-Design-02.png" alt="Responsive image"> 
-            <img src="../assets/img/3-Game-Design-03.png" alt="Responsive image"> 
-            <img src="../assets/img/3-Game-Design-04.png" alt="Responsive image"> 
-        </div>
-    </div> -->
+   
     
     <div class="container">
         <div class="row justify-content-md-center" >
@@ -571,12 +569,8 @@
                 </div>
                 <div class="row justify-content-start">
                     <h4 class="mytitle-1 col-md-12">Research</h4>
-                    <!-- <h6 class="mytitle-2 col-md-3">Urban Exploration</h6> -->
                     <p class="col-md-12">I go through the Dream of the Red Chamber, and mark the information that I need and note it in my notebook. And I gathered some information on the Internet to ensure the accuracy of my research.</p>
-                 <!--    <div class="col-md-12">
-                        <img class="img-fluid" src="../assets/img/1-cityexplore-01.png" alt="Responsive image"> 
-                    </div> -->
-                    <!-- Interview -->
+               
                     <h4 class="mytitle-1 col-md-12">Gathering the data</h4>
                     <p class="col-md-12">First I found the full set of Dream of the Red Chamber online. Then I coding a Web crawler by node.js and gathering the raw data of the novel. </p>
                   
@@ -584,12 +578,10 @@
                     <p class="col-md-12">Now that I had all the raw data, I wanted to analyze the times that each character appears how many times in each chapter and the whole novel. And I using "node-segment" as  the word segmentation module to analyze the novel. </p>
                     
                 </div>
-                <!-- <div class="row justify-content-md-center" style="margin-top: 50px">
-                    <h2 class="mytitle">- END -</h2>
-                </div> -->
+               
                  
             </div>
-        </div>
+         </div>
     </div>
     
     <div class="container-fluid" id="my-data-v">
@@ -625,7 +617,7 @@
                         <div class="btn-group">
                             <span id="allCharachers" class="btn btn-default active" style="height: 35px; font-size:14px;">    <p>All Characters</p></span>
                             <span class="btn btn-default familyselect" id="familySelect" style="height: 35px;  font-size:14px;"><p>View by Clans</p></span>
-                            <!-- <button type="button" class="btn btn-default wutangselect" style="height: 35px;  font-size:14px;">Just <img src="css/wu-tang2.png" style="width: 20px;"></button> -->
+                           
                         </div>
                         
                     </div>
@@ -637,17 +629,12 @@
 
 
 
-
-
-                <script src="http://d3js.org/d3.v5.js" charset="utf-8"></script>
-                <!-- <script src="https://d3js.org/d3-path.v1.min.js"></script> -->
-                <!-- <script src="assets/js/chroma.js" charset="utf-8"></script> -->
-                <script src='../assets/js/haha.js'></script>
             </div>
-        </div>
+    </div>
 
-        <div class="container-fluid" id="my-data-v2">
-            <div id="top-intro">
+        
+            <div id="top-intro" style="position: relative;">
+                <div style="width: 180%;height: 800px; position: absolute; top: -60px;left: -30%; background-color: #171A1D; z-index: -1000"></div>
                 <div id="top-title">Discover the relationships of the clans and generations</div>
                 <!-- </div> -->
             </div>
@@ -656,13 +643,6 @@
                 <img src="img/ala.png" alt="" style="opacity: 1" id="imgla">
 
             </div>
-            <!-- <svg id="visualisationC">
-            
-            </svg> -->
-        
-            <script src="js/main.js"></script>
-        </div>
-
 
 
     <div class="container">
@@ -672,8 +652,6 @@
                 </div>
                  
             </div>
-        </div>
-    </div>
     <div id="bottomNav">
         <nav class="main-nav sqs-frontend-overlay-editor-widget-host" data-content-field="navigation">
             <ul>
@@ -702,10 +680,16 @@
         </div>
     </footer>
 
-    
 
-   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<!--     <script src="https://cdn.bootcss.com/popper.js/1.12.9/ulg/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--     <script src="http://d3js.org/d3.v5.js" charset="utf-8"></script>
+ -->                <!-- <script src="https://d3js.org/d3-path.v1.min.js"></script>
+                <script src="../assets/js/chroma.js" charset="utf-8"></script> -->
+                <script src='../assets/js/haha.js'></script>
+
+    <script src="js/main.js"></script>
+
+   <!-- <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/ulg/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 </html>

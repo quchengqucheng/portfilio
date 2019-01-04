@@ -196,21 +196,22 @@ svg3.append("defs")
     .ticks(7),
 
 
-    // yAxis = d3.svg.axis()
-    // .scale(yScale)
+    yAxis = d3.axisLeft()
+    .scale(yScale)
+    .ticks(7);
     // .orient("left");
 
 
-    yAxis = g => g
-        .attr("transform", `translate(${MARGINS.left},0)`)
-        .call(d3.axisLeft(yScale).ticks(7))
-        .call(g => g.select(".domain").remove())
-        .call(g => g.select(".tick:last-of-type text").clone()
-            .attr("x", 3)
-            .attr("text-anchor", "start")
-            .attr("font-weight", "bold")
+    // yAxis = g => g
+    //     .attr("transform", `translate(${MARGINS.left},0)`)
+    //     .call(d3.axisLeft(yScale).ticks(7))
+    //     .call(g => g.select(".domain").remove())
+    //     .call(g => g.select(".tick:last-of-type text").clone()
+    //         .attr("x", 3)
+    //         .attr("text-anchor", "start")
+    //         .attr("font-weight", "bold")
             
-            .text(data.yScale));
+    //         .text(data.yScale));
 
 
                     

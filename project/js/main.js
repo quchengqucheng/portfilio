@@ -217,14 +217,14 @@ var hoverColors =
 var currentRoyalLeaders = [
   {id: "I49", country: "Liechtenstein",  title: "Prince of Liechtenstein",      name:"Hans-Adam II"}, //added manually
   {id: "I50", country: "Luxembourg",     title: "Grand Duke of Luxembourg",     name:"Henri"}, //added manually
-	{id: "I51", country: "Belgium",        title: "King of Belgium",              name:"Philippe"},
-	{id: "I610",  country: "Denmark",        title: "Queen of Denmark",             name:"Margrethe II"},
-  {id: "I452",  country: "Norway",         title: "King of Norway",               name:"Harald V"},
-  {id: "I52",   country: "United Kingdom", title: "Queen of the United Kingdom",  name:"Elizabeth II"},
-	{id: "I603",  country: "Sweden",         title: "King of Sweden",               name:"Carl XVI Gustaf"},
-  {id: "I444",  country: "Spain",          title: "King of Spain",                name:"Felipe VI"},
-  {id: "I1208", country: "Netherlands",    title: "King of the Netherlands",      name:"Willem Alexander"},
-  {id: "I3034", country: "Monaco",         title: "Prince of Monaco",             name:"Albert II"} //added manually
+	{id: "I51", country: "Belgium",        title: "King of Belgium",              name:"Philippe"}
+	// {id: "I610",  country: "Denmark",        title: "Queen of Denmark",             name:"Margrethe II"},
+ //  {id: "I452",  country: "Norway",         title: "King of Norway",               name:"Harald V"},
+ //  {id: "I52",   country: "United Kingdom", title: "Queen of the United Kingdom",  name:"Elizabeth II"},
+	// {id: "I603",  country: "Sweden",         title: "King of Sweden",               name:"Carl XVI Gustaf"},
+ //  {id: "I444",  country: "Spain",          title: "King of Spain",                name:"Felipe VI"},
+ //  {id: "I1208", country: "Netherlands",    title: "King of the Netherlands",      name:"Willem Alexander"},
+ //  {id: "I3034", country: "Monaco",         title: "Prince of Monaco",             name:"Albert II"} //added manually
 ];
 var royals = currentRoyalLeaders.map(function(d) { return d.id; });
 var interestingRoyal = [
@@ -489,16 +489,26 @@ var pathClickedTitle = pathClickNodeWrapper.append("text")
 var nodesSave,
     linkSave;
 
+console.log("haha");
+
 d3.queue() 
   // .defer(d3.json, "js/data/royal-families-links-force.json")
   // .defer(d3.csv, "js/data/royal-families-members-force.csv")
   .defer(d3.json, "js/data/redstone-families-links-force.json")
   .defer(d3.csv, "js/data/redstone-families-members-force12.csv")
   .await(draw);
+console.log("haha");
 
 function draw(error, links, nodes) {
-
+console.log("haha");
   if (error) throw error;
+// try {
+//     let response = await getAllPosts();
+// } catch(e) {
+//     console.log(error);
+// }
+
+  console.log("haha");
 
 
 
