@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica|Muli:300,400" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica|Muli:300,400" rel="stylesheet"> -->
+  <link rel="stylesheet" href="../assets/css/font.css?family=IM+Fell+DW+Pica|Muli:300,400">
+
   <!-- <script src="https://d3js.org/d3-queue.v3.min.js"></script> -->
         <script src="https://d3js.org/d3-color.v1.min.js"></script>
         <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
@@ -566,19 +568,10 @@
                 <div class="row justify-content-start">
                     <h4 class="col-md-12">Background</h4>
                     <p class="col-md-12">The Dream of the Red Chamber describes the Jias' wealth and influence in great naturalistic detail, and charts the Jias' fall from the height of their prestige, following some thirty main characters and over four hundred minor ones. So we can see that the relationships between characters are quite complex. And I'm trying to figure out who are the main characters and what are the relationship between the them. I aim at design and coding an interactive visualization of the Dream of the Red Chamber.</p>
-                </div>
-                <div class="row justify-content-start">
-                    <h4 class="mytitle-1 col-md-12">Research</h4>
-                    <p class="col-md-12">I go through the Dream of the Red Chamber, and mark the information that I need and note it in my notebook. And I gathered some information on the Internet to ensure the accuracy of my research.</p>
+                    <h4 class="mytitle-1 col-md-12">Outcome</h4>
                
-                    <h4 class="mytitle-1 col-md-12">Gathering the data</h4>
-                    <p class="col-md-12">First I found the full set of Dream of the Red Chamber online. Then I coding a Web crawler by node.js and gathering the raw data of the novel. </p>
-                  
-                    <h4 class="mytitle-1 col-md-12">Analyzing the data</h4>
-                    <p class="col-md-12">Now that I had all the raw data, I wanted to analyze the times that each character appears how many times in each chapter and the whole novel. And I using "node-segment" as  the word segmentation module to analyze the novel. </p>
-                    
                 </div>
-               
+                
                  
             </div>
          </div>
@@ -645,8 +638,47 @@
             </div>
 
 
-    <div class="container">
-        
+    <div class="container" style="margin-top: 50px;">
+        <div class="row justify-content-start">
+                    <h4 class="mytitle-1 col-md-12">Research</h4>
+                    <p class="col-md-12">I go through the Dream of the Red Chamber, and mark the information that I need and note it in my notebook. And I gathered some information on the Internet to ensure the accuracy of my research.</p>
+                    <h6 class="mytitle-1 col-md-12 text-center">Data</h6>
+                    <div class="card col-md-12" style="border: 0;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-center"><span style="font-weight: bold;"> · </span>All the characters</li>
+                            <li class="list-group-item text-center"><span style="font-weight: bold;"> · </span>Characters Word Frequency List of whole book</li>
+                            <li class="list-group-item text-center"><span style="font-weight: bold;"> · </span>Characters Word Frequency List of 120 chapters in the book</li>
+                        </ul>
+                    </div>
+               
+                    <h4 class="mytitle-1 col-md-12">Gathering the data</h4>
+                    <p class="col-md-12">First I found the full set of Dream of the Red Chamber online. Then I coding a Web crawler by node.js and gathering the raw data of the novel. </p>
+                     <div class="col-md-12">
+                        <img class="img-fluid" src="../assets/img/4-Data-Visualization-02.png" alt="Responsive image"> 
+                    </div>
+                  
+                    <h4 class="mytitle-1 col-md-12">Analyzing the data</h4>
+                    <p class="col-md-12">Now that I had all the raw data, I wanted to analyze the times that each character appears how many times in each chapter and the whole novel. And I using "node-segment" as  the word segmentation module to analyze the novel. </p>
+                     <div class="col-md-12">
+                        <img class="img-fluid" src="../assets/img/4-Data-Visualization-01.png" alt="Responsive image"> 
+                    </div>
+                </div>
+                <div class="row justify-content-start">
+                    <h6 class="mytitle-1 col-md-12 text-center">Want to see</h6>
+                    <div class="card col-md-12" style="border: 0;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-center"><span style="font-weight: bold;"> · </span>Main characters (based on Word Frequency Analyzation of whole book）</li>
+                            <li class="list-group-item text-center"><span style="font-weight: bold;"> · </span>Relationship between characters (Extended family/ Marriage/ Household & Servants）</li>
+                            <li class="list-group-item text-center"><span style="font-weight: bold;"> · </span>Relationship between big events and Characters Word Frequency List of 120 chapters</li>
+                        </ul>
+                    </div>
+
+                    <h4 class="mytitle-1 col-md-12">Sketching the Idea</h4>
+                    <p class="col-md-12">After reading and understanding many talented data visualization projects and I tried different ways of Data Visualization in order to find the most expressive type of visualization for my project. (The "family tree" data visualization is inspired by "Royal Constellations") </p>
+                    <div class="col-md-12">
+                        <img class="img-fluid" src="../assets/img/4-Data-Visualization-03.png" alt="Responsive image"> 
+                    </div>
+                </div>
                 <div class="row justify-content-md-center" style="margin-top: 50px">
                     <h2 class="mytitle">- END -</h2>
                 </div>
