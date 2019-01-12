@@ -230,11 +230,11 @@ var royals = currentRoyalLeaders.map(function(d) { return d.id; });
 var interestingRoyal = [
   // {id: "I1", country: "France",          title: "Queen of France",     name: "宁国府", note:"Killed by the guillotine during the French revolution"},
   // {id: "I18", country: "France",          title: "Queen of France",     name: "荣国府", note:"Killed by the guillotine during the French revolution"},
-  {id: "I27", country: "France",          title: "Queen of France",     name: "", note:"Killed by the guillotine during the French revolution"},
-  // {id: "I33", country: "France",          title: "Queen of France",     name: "王", note:"Killed by the guillotine during the French revolution"},
-  {id: "I49", country: "France",          title: "Queen of France",     name: "", note:"Killed by the guillotine during the French revolution"},
-  {id: "I50", country: "France",          title: "Queen of France",     name: "", note:"Killed by the guillotine during the French revolution"},
-  {id: "I51", country: "France",          title: "Queen of France",     name: "", note:"Killed by the guillotine during the French revolution"}
+  {id: "I27", country: "France",          title: "Queen of France",     name: "", note:""},
+  // {id: "I33", country: "France",          title: "Queen of France",     name: "王", note:""},
+  {id: "I49", country: "France",          title: "Queen of France",     name: "", note:""},
+  {id: "I50", country: "France",          title: "Queen of France",     name: "", note:""},
+  {id: "I51", country: "France",          title: "Queen of France",     name: "", note:""}
 
 ];
 // var interestingRoyal = [
